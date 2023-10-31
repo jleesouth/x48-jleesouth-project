@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero-image {
+      height: 100%;
+      width: 100%;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: bottom; /* remove whitespace below image */
+    }
+
+    h1 {
+      color: #bfed84;
+      font-size: 64px;
+      font-weight: bold;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      z-index: -100;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 15%;
+      left: 30%;
+    }
+
+    .footer-content {
+      width: 100%;
+      background-color: #FBEC5D;
+    }
+
+    .hero-button {
+      position: absolute;
+      bottom: 20%;
+      right: 43%;
+      border-radius:40px;
+      border: none;
+      background-color: #e73a54;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    button.hero-button a {
+      display: inline;
+      border: none;
+      color: #ffffff;
+      padding: 0;
+    }
+  </style>
+
+
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <div class="logo-bg"><a href="#" style="border-bottom: none;"><img class="logo" src="./assets/images/Crafty_croc_logo.png" alt="dish logo"/></a></div>
+  <nav>
+    <div class="horizontal-nav flex-container">
+      <a href="#" class="active-menu-item">HOME</a>
+      <a href="page-2.html">CRAFT KITS</a>
+      <a href="page-3.html">MAGAZINES</a>
+      <a href="page-4.html">CRAFT TOOLS</a>
+      <a href="page-5.html">DIY TUTORIALS</a>
+      <a href="page-6.html">ABOUT</a>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="#" class="active-menu-item">HOME</a>
+        <a href="Page-2.html">CRAFT KITS</a>
+        <a href="Page-3.html">MAGAZINES</a>
+        <a href="Page-4.html">CRAFT TOOLS</a>
+        <a href="Page-5.html">DIY TUTORIALS</a>
+        <a href="Page-6.html">ABOUT</a>
+      </div>
+    </div>
+  </nav>
+  <section class="container">
+    <img class="hero-image" src="./assets/images/AdobeStock_104732052.jpeg" />
+    <div class="hero-text">
+      <h1></h1>
+    </div>
+    <button class="hero-button"><a href="https://google.com" target="_blank">Explore Craft Kits</a></button>
+  </section>
+  <footer class="footer-content">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right" style="color: #e73a54;"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right" style="color: #e73a54;"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right" style="color: #e73a54;"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right" style="color: #e73a54;"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right" style="color: #e73a54;"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x" style="color: #e73a54;"></a>
+    </div>
+  </footer>
+</body>
+</html>

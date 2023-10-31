@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <div class="flex-container logo-bg"><a href="index.html" style="border-bottom: none;"><img class="logo" src="./assets/images/dish-01.png" alt="dish logo"/></a></div>
+  <nav>
+    <div class="horizontal-nav flex-container">
+      <a href="index.html">HOME</a>
+      <a href="page-2.html">CRAFT KITS</a>
+      <a href="page-3.html">MAGAZINES</a>
+      <a href="page-4.html">CRAFT TOOLS</a>
+      <a href="#" class="active-menu-item">DIY TUTORIALS</a>
+      <a href="page-6.html">ABOUT</a>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="Page-2.html">CRAFT KITS</a>
+        <a href="Page-3.html">MAGAZINES</a>
+        <a href="Page-4.html">CRAFT TOOLS</a>
+        <a href="#" class="active-menu-item">DIY TUTORIALS</a>
+        <a href="Page-6.html">ABOUT</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 70%; float: left; ">
+      <div style="border-right: 1px solid rgb(181, 181, 181);">
+        <!-- TODO: add content -->
+        hello page-5.html
+      </div>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+      <!-- TODO: add content -->
+      <div>
+        hello class
+      </div>
+    </aside>
+  </section>
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+</html>
